@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  /* Colors */
+
+  /* ### Primary */
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+  --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --clr-very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 14px;
+  background-color: var(--clr-very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+}
+main {
+  padding: 6rem 1rem;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 3rem;
+  color: var(--clr-transparent-white);
+  display: grid;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.card h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--clr-very-light-gray);
+}
+
+.card p {
+  line-height: 1.8;
+  letter-spacing: 0.025rem;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: var(--clr-very-light-gray);
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 1rem 2rem;
+}
+
+.orange {
+  background-color: var(--clr-bright-orange);
+}
+.orange a {
+  color: var(--clr-bright-orange);
+}
+
+.cyan {
+  background-color: var(--clr-dark-cyan);
+}
+
+.cyan a {
+  color: var(--clr-dark-cyan);
+}
+
+.dark-cyan {
+  background-color: var(--clr-very-dark-cyan);
+}
+
+.dark-cyan a {
+  color: var(--clr-very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (width > 920px) {
+  .container {
+    max-width: 920px;
+    grid-auto-flow: column;
+  }
+  main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 500px;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
