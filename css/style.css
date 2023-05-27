@@ -97,7 +97,7 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (width > 920px) {
+@media screen and (min-width: 920px) {
   .container {
     max-width: 920px;
     grid-auto-flow: column;
