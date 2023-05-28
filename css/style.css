@@ -66,6 +66,13 @@ main {
   border-radius: 2rem;
   width: fit-content;
   padding: 1rem 2rem;
+  font-family: inherit;
+}
+
+.card button:hover {
+  background-color: transparent !important;
+  color: var(--clr-transparent-white);
+  outline: 2px solid var(--clr-very-light-gray);
 }
 
 .orange {
