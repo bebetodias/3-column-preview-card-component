@@ -58,8 +58,10 @@ main {
   letter-spacing: 0.025rem;
 }
 
-.card a {
+.card button {
   text-decoration: none;
+  border: 0;
+  cursor: pointer;
   background-color: var(--clr-very-light-gray);
   border-radius: 2rem;
   width: fit-content;
@@ -69,7 +71,7 @@ main {
 .orange {
   background-color: var(--clr-bright-orange);
 }
-.orange a {
+.orange button {
   color: var(--clr-bright-orange);
 }
 
@@ -77,7 +79,7 @@ main {
   background-color: var(--clr-dark-cyan);
 }
 
-.cyan a {
+.cyan button {
   color: var(--clr-dark-cyan);
 }
 
@@ -85,7 +87,7 @@ main {
   background-color: var(--clr-very-dark-cyan);
 }
 
-.dark-cyan a {
+.dark-cyan button {
   color: var(--clr-very-dark-cyan);
 }
 
